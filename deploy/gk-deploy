@@ -309,7 +309,7 @@ END
 
   while read -r node; do
     debug "Marking '${node}' as a GlusterFS node."
-    ${CLI} label nodes ${node} storagenode=glusterfs
+    ${CLI} label nodes ${node} storagenode=glusterfs-node
   done <<< "$(echo -e "$gfs_nodes")"
   debug "Deploying GlusterFS pods."
   if [[ "${CLI}" == *oc* ]]; then

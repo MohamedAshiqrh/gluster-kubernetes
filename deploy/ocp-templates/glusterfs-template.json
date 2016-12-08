@@ -40,7 +40,7 @@
                     },
                     "spec": {
                         "nodeSelector": {
-                            "storagenode": "glusterfs"
+                            "storagenode": "glusterfs-node"
                         },
                         "hostNetwork": true,
                         "containers": [
